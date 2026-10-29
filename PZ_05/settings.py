@@ -1,0 +1,21 @@
+"""Размеры логического интерфейса, палитра и ограничения редактора."""
+
+WIDTH, HEIGHT = 1120, 760
+FPS = 60
+SCALE_MIN, SCALE_MAX = 0.2, 4.0
+SHEAR_MIN, SHEAR_MAX = -0.8, 0.8
+MOVE_SPEED = 160.0
+ROTATE_SPEED = 70.0
+SCALE_SPEED = 0.7
+SHEAR_SPEED = 0.5
+TRANSLATION_LIMIT = 10000.0
+BACKGROUND = (12, 17, 26)
+PANEL = (20, 28, 41)
+CARD = (27, 37, 52)
+GRID = (30, 41, 55)
+TEXT = (230, 237, 246)
+MUTED = (143, 161, 184)
+ACCENT = (69, 221, 185)
+CORAL = (255, 139, 119)
+GOLD = (255, 213, 112)
+OUTLINE = (114, 132, 157)
