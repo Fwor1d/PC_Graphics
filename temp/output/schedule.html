@@ -1,0 +1,568 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+<meta charset="UTF-8">
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+    width: 630px;
+    height: 630px;
+
+    font-family:
+        Inter,
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background: #f4f5f7;
+}
+
+.page {
+
+    width: 630px;
+    height: 630px;
+
+    padding: 28px;
+
+    display: flex;
+    flex-direction: column;
+
+    background:
+
+        radial-gradient(
+            circle at 85% 5%,
+            rgba(103, 83, 255, 0.10),
+            transparent 30%
+        ),
+
+        #f7f7f9;
+}
+
+
+/* ================================
+   ШАПКА
+================================ */
+
+.header {
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    margin-bottom: 18px;
+}
+
+.day {
+
+    font-size: 34px;
+    line-height: 1;
+
+    font-weight: 900;
+
+    letter-spacing: -1.4px;
+
+    color: #17171a;
+}
+
+.course {
+
+    font-size: 11px;
+    font-weight: 600;
+
+    color: #929298;
+
+    margin-bottom: 3px;
+}
+
+
+/* ================================
+   ДВЕ ГРУППЫ
+================================ */
+
+.groups {
+
+    flex: 1;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 14px;
+}
+
+
+/* ================================
+   КОЛОНКА ГРУППЫ
+================================ */
+
+.group {
+
+    background: rgba(255,255,255,0.88);
+
+    border: 1px solid #e9e9ed;
+
+    border-radius: 19px;
+
+    padding: 10px;
+
+    box-shadow:
+        0 7px 25px rgba(0,0,0,0.035);
+
+    overflow: hidden;
+}
+
+.group-title {
+
+    height: 37px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 12px;
+
+    border-radius: 11px;
+
+    background: #17171a;
+
+    color: white;
+
+    font-size: 14px;
+    font-weight: 800;
+
+    letter-spacing: 0.2px;
+
+    margin-bottom: 9px;
+}
+
+
+/* ================================
+   СПИСОК ПАР
+================================ */
+
+.lessons {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+/* ================================
+   ОДНА ПАРА
+================================ */
+
+.lesson {
+
+    padding: 10px;
+
+    background: #ffffff;
+
+    border: 1px solid #eeeeF1;
+
+    border-radius: 13px;
+}
+
+.lesson-top {
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 6px;
+}
+
+
+/* ================================
+   ВРЕМЯ
+================================ */
+
+.time {
+
+    color: #17171a;
+
+    font-size: 12px;
+    font-weight: 850;
+
+    letter-spacing: -0.2px;
+}
+
+
+/* ================================
+   ТИП ПАРЫ
+================================ */
+
+.type {
+
+    font-size: 8px;
+
+    font-weight: 800;
+
+    padding: 4px 7px;
+
+    border-radius: 100px;
+}
+
+.lecture {
+
+    background: #eeeaff;
+
+    color: #6554dd;
+}
+
+.practice {
+
+    background: #e8f7ef;
+
+    color: #258256;
+}
+
+
+/* ================================
+   ПРЕДМЕТ
+================================ */
+
+.subject {
+
+    color: #242428;
+
+    font-size: 11px;
+
+    line-height: 1.18;
+
+    font-weight: 760;
+
+    letter-spacing: -0.15px;
+
+    margin-bottom: 8px;
+}
+
+
+/* ================================
+   НИЖНЯЯ ИНФОРМАЦИЯ
+================================ */
+
+.lesson-info {
+
+    padding-top: 7px;
+
+    border-top: 1px solid #f0f0f2;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.room {
+
+    font-size: 9px;
+
+    color: #57575d;
+
+    font-weight: 750;
+}
+
+.teacher {
+
+    font-size: 8px;
+
+    line-height: 1.15;
+
+    color: #a0a0a6;
+
+    font-weight: 500;
+}
+
+
+/* ================================
+   ПОДВАЛ
+================================ */
+
+.footer {
+
+    margin-top: 12px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    color: #a2a2a8;
+
+    font-size: 8px;
+}
+
+.logo {
+
+    color: #17171a;
+
+    font-weight: 800;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<div class="page">
+
+    <header class="header">
+
+        <div class="day">
+            ПОНЕДЕЛЬНИК
+        </div>
+
+        <div class="course">
+            ИЭиУ АПК · 3 курс
+        </div>
+
+    </header>
+
+
+    <main class="groups">
+
+        
+    <div class="group">
+
+        <div class="group-title">
+            ДЭ 23-24
+        </div>
+
+        <div class="lessons">
+            
+    <div class="lesson">
+
+        <div class="lesson-top">
+            <div class="time">
+                09:00
+            </div>
+
+            <div class="type lecture">
+                Лекция
+            </div>
+        </div>
+
+        <div class="subject">
+            Инфокоммуникационные системы и сети
+        </div>
+
+        <div class="lesson-info">
+
+            <div class="room">
+                09 — ХД
+            </div>
+
+            <div class="teacher">
+                Ветошкин Артем Юрьевич
+            </div>
+
+        </div>
+
+    </div>
+    
+    <div class="lesson">
+
+        <div class="lesson-top">
+            <div class="time">
+                10:55
+            </div>
+
+            <div class="type lecture">
+                Лекция
+            </div>
+        </div>
+
+        <div class="subject">
+            Администрирование операционных систем
+        </div>
+
+        <div class="lesson-info">
+
+            <div class="room">
+                15 — 202
+            </div>
+
+            <div class="teacher">
+                Храмов Дмитрий Эдуардович
+            </div>
+
+        </div>
+
+    </div>
+    
+    <div class="lesson">
+
+        <div class="lesson-top">
+            <div class="time">
+                13:00
+            </div>
+
+            <div class="type practice">
+                Практика
+            </div>
+        </div>
+
+        <div class="subject">
+            Инфокоммуникационные системы и сети
+        </div>
+
+        <div class="lesson-info">
+
+            <div class="room">
+                02 — 106
+            </div>
+
+            <div class="teacher">
+                Невзоров Александр Сергеевич
+            </div>
+
+        </div>
+
+    </div>
+    
+        </div>
+
+    </div>
+    
+    <div class="group">
+
+        <div class="group-title">
+            ДЭ 24-24
+        </div>
+
+        <div class="lessons">
+            
+    <div class="lesson">
+
+        <div class="lesson-top">
+            <div class="time">
+                09:00
+            </div>
+
+            <div class="type lecture">
+                Лекция
+            </div>
+        </div>
+
+        <div class="subject">
+            Инфокоммуникационные системы и сети
+        </div>
+
+        <div class="lesson-info">
+
+            <div class="room">
+                09 — ХД
+            </div>
+
+            <div class="teacher">
+                Ветошкин Артем Юрьевич
+            </div>
+
+        </div>
+
+    </div>
+    
+    <div class="lesson">
+
+        <div class="lesson-top">
+            <div class="time">
+                10:55
+            </div>
+
+            <div class="type lecture">
+                Лекция
+            </div>
+        </div>
+
+        <div class="subject">
+            Фронтенд и бэкенд разработка
+        </div>
+
+        <div class="lesson-info">
+
+            <div class="room">
+                15 — 202
+            </div>
+
+            <div class="teacher">
+                Храмов Дмитрий Эдуардович
+            </div>
+
+        </div>
+
+    </div>
+    
+    <div class="lesson">
+
+        <div class="lesson-top">
+            <div class="time">
+                13:00
+            </div>
+
+            <div class="type practice">
+                Практика
+            </div>
+        </div>
+
+        <div class="subject">
+            Программная инженерия
+        </div>
+
+        <div class="lesson-info">
+
+            <div class="room">
+                02 — 302
+            </div>
+
+            <div class="teacher">
+                Храмов Дмитрий Эдуардович
+            </div>
+
+        </div>
+
+    </div>
+    
+        </div>
+
+    </div>
+    
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="logo">
+            РАСПИСАНИЕ
+        </div>
+
+        <div>
+            ДЭ 23-24 · ДЭ 24-24
+        </div>
+
+    </footer>
+
+</div>
+
+</body>
+
+</html>
